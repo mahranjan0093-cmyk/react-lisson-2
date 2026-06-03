@@ -4,7 +4,7 @@ import { faHome , faInfoCircle , faUser, faCartShopping} from '@fortawesome/free
 
 function Navbar() {
   return (
-    <nav className="flex gap-6 p-4 bg-gray-800 text-white">
+    <nav className="flex gap-6 p-4 text-white">
       <Link className="transition hover:text-blue-500 " to="/">
         <FontAwesomeIcon icon={faHome} /> Home
       </Link>

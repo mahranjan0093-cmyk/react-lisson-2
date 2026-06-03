@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCube } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
-function Header() {
+function Header(props) {
   return (
-    <header className="flex justify-between items-center p-4 bg-gray-800 text-white">
+    <header className={`flex justify-between items-center p-4 text-white ${props.bgColor}`}>
       <div>
         <FontAwesomeIcon icon={faCube} className="text-4xl text-blue-500" />
       </div>
