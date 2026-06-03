@@ -9,7 +9,7 @@ function Header(props) {
       <div>
         <FontAwesomeIcon icon={faCube} className="text-4xl text-blue-500" />
       </div>
-      <Navbar />
+      <Navbar setBgColor={props.setBgColor}/>
       <div className="flex gap-4">
         <Link to="/signin" className="blue-btn">
           Sign in
