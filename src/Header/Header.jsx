@@ -1,15 +1,25 @@
-import Btn from "../Btn/Btn"
-import Navbar from "../Navbar/Navbar"
-import Logo from "../Logo/Logo"
+import Navbar from "../Navbar/Navbar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCube } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header className="flex justify-between items-center p-4 bg-gray-800 text-white">
-      <Logo />
+      <div>
+        <FontAwesomeIcon icon={faCube} className="text-4xl text-blue-500" />
+      </div>
       <Navbar />
-      <Btn />
+      <div className="flex gap-4">
+        <Link to="/signin" className="blue-btn">
+          Sign in
+        </Link>
+        <Link to="/signup" className="green-btn">
+          Sign up
+        </Link>
+      </div>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;
